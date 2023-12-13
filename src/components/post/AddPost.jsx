@@ -18,6 +18,7 @@ export default function AddPost(){
   const [content,setContent] = useState('')
   const [userId,setUserId] = useState(0)
   const canSave = Boolean(title) && Boolean(content) && Boolean(userId)
+  console.log(canSave);
   const submitHandler = (e)=>{
     e.preventDefault()
     if(title && content){
@@ -26,11 +27,12 @@ export default function AddPost(){
     }
     setTitle('')
     setContent('')
+    setUserId(0)
   }
   return(
     <div className="addPostContainer">
-      <h1>Add Posts</h1>
-      <form onSubmit={submitHandler} className="addPostForm">
+        <h1>Add Posts</h1>
+      <form className="addPostForm">
         <div className="addPostInput">
           <label htmlFor="title">Title:</label>
           <input value={title} onChange={(e)=>setTitle(e.target.value)} type="text" id="title" />
@@ -46,7 +48,7 @@ export default function AddPost(){
           <label htmlFor="content">Content:</label>
           <textarea value={content} onChange={(e)=>setContent(e.target.value)} name="content" id="content" cols="20" rows="10"></textarea>
         </div>
-        <button disabled={!canSave} type="submit">Submit</button>
+        <button disabled={!canSave}  onClick={submitHandler} type="button">Submit</button>
       </form>
     </div>
   )

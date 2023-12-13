@@ -7,47 +7,16 @@ body{
   background-color: #000;
   color: #fff;
 }
-.postContainer1{
-  margin: 10px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.postContainer2{
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  
-}
-.post{
-  border: 2px solid white;
-  border-radius: .6rem;
-  padding: .6rem 1.3rem;
-  height: 100px;
-  margin: .6rem 0;
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.post .removeBtn{
-  background-color: #e21b1b;
-  padding: 6px;
-  border-radius: 6px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
 /* addPost Styling */
 .addPostContainer{
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid gray;
   align-items: center;
+  background-color: #393838bd;
+  padding: 1rem 0;
 }
 .addPostForm{
-  margin: 14px 0;
-  width: 400px;
+  width: 35vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -67,11 +36,60 @@ body{
 .addPostInput textarea{
   height: 50px;
 }
+.addPostInput select{
+  height: 2rem;
+}
 .addPostForm button{
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 6px;
   width: 100%;
   padding: 10px 0;
-  background-color: #000;
+  background-color: #a09b9b;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+/* Post Styling */
+.postContainer1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+.post{
+  width: 35vw;
+  border: 2px solid white;
+  margin: 0.4rem 0;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+.post .postContent{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 23vw;
+  justify-content: space-evenly;
+  height: 120px;
+  /* border: 2px solid red; */
+}
+.post .removeBtn{
+  padding: 6px;
+  background-color: red;
+  cursor: pointer;
   color: #fff;
+  font-weight: 700;
+  border: 2px solid red;
+  border-radius: 6px;
+}
+.post .reactionBtn{
+  margin: 0 .6rem 0 0;
+  padding: 3px;
+  background-color: transparent;
+  color:  white;
+  border: none;
+  cursor: pointer;
 }
