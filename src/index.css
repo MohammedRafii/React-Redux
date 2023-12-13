@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #000;
+  color: #fff;
+}
+.postContainer1{
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.postContainer2{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  
+}
+.post{
+  border: 2px solid white;
+  border-radius: .6rem;
+  padding: .6rem 1.3rem;
+  height: 100px;
+  margin: .6rem 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post .removeBtn{
+  background-color: #e21b1b;
+  padding: 6px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* addPost Styling */
+.addPostContainer{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid gray;
+  align-items: center;
+}
+.addPostForm{
+  margin: 14px 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height:300px ;
+}
+.addPostInput{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+.addPostInput input,textarea{
+  padding: 10px;
+  opacity: 0.9;
+  border: 1px solid #fff;
+  outline: none;
+}
+.addPostInput textarea{
+  height: 50px;
+}
+.addPostForm button{
+  border: 2px solid #fff;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+}
